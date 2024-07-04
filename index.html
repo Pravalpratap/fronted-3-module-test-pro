@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="color">Crypto Data</h1>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="sortData('market_cap')" id="btnsort">Sort by Market Cap</button>
+    <button onclick="sortData('percentage_change')" id="Percentage">Sort by Percentage Change</button>
+    <table>
+        <thead>
+            <tr  class="color">
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="dataTableBody">
+            <!-- Data will be dynamically inserted here -->
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
